@@ -24,7 +24,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 # Build pipeline: TF-IDF → SVM
 pipeline = Pipeline([
     ('tfidf', TfidfVectorizer(stop_words='english')),
-    ('svm', SVC(kernel='linear', random_state=42))
+    ('svm', SVC(kernel='linear', random_state=42, probability=True))
 ])
 
 # Train
