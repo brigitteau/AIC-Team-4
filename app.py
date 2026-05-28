@@ -111,9 +111,9 @@ textarea {
 pipeline = joblib.load('spam_svm_model.pkl')
 
 # ── Pre-encode both logos ──────────────────────────────────────
-with open("/Users/aditid/Downloads/musubi_no_bg.png", "rb") as f:
+with open("happy_musubi.png", "rb") as f:
     happy_b64 = base64.b64encode(f.read()).decode()
-with open("/Users/aditid/Downloads/sad_musubi.png", "rb") as f:
+with open("sad_musubi.png", "rb") as f:
     sad_b64 = base64.b64encode(f.read()).decode()
 
 # ── Keep history in session state ─────────────────────────────
